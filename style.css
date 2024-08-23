@@ -1,0 +1,290 @@
+:root {
+  --accent-color: #4694dc;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 156px;
+  margin: 0 auto;
+}
+
+/* header */
+
+.header__container {
+  background-color: var(--accent-color);
+  padding-top: 120px;
+  padding-bottom: 122px;
+  min-height: 500px;
+}
+
+.header__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  /* identical to box height, or 0% */
+
+  color: #ffffff;
+
+  margin-bottom: 35px;
+}
+
+.header__text {
+  max-width: 437px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  color: #ffffff;
+
+  margin-bottom: 47px;
+}
+
+.header__button {
+  width: 194px;
+  height: 60px;
+  background-color: #fff;
+  border: none;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  color: #000000;
+}
+
+/* header */
+
+/* header-media */
+
+@media screen and (max-width: 1050px) {
+  .header__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header__title {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+}
+
+/* header-media */
+
+/* text-block */
+
+.text-block {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.text-block__title {
+  text-align: center;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  /* line-height: 22px; */
+  /* identical to box height */
+  letter-spacing: 3.3px;
+
+  color: #000000;
+
+  margin-bottom: 25px;
+}
+
+.text-block__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #9ca3af;
+
+  max-width: 465px;
+
+  margin: 0 auto;
+}
+
+/* text-block */
+
+/* services */
+
+.services {
+}
+
+.services__container {
+  padding-bottom: 60px;
+}
+
+.services__text-block {
+}
+
+.services__icons {
+  max-width: 888px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.services__icon-box {
+  min-width: 280px;
+  padding-top: 60px;
+}
+
+.services__icon {
+}
+
+.services__icon-title {
+  text-align: center;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+  color: #9ca3af;
+}
+
+.services__icon-placement {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  margin-bottom: 20px;
+}
+
+/* services */
+
+/* services-media */
+
+@media screen and (max-width: 1050px) {
+  .services__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .services__icons {
+    flex-direction: column;
+  }
+}
+
+/* services-media */
+
+/* team  */
+
+.team {
+}
+
+.team__container {
+  padding-top: 39px;
+  padding-bottom: 80px;
+}
+
+.team__text-block {
+  margin-bottom: 30px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-between;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.team-member {
+  height: 76px;
+  min-width: 260px;
+
+  display: flex;
+  align-items: center;
+
+  padding-left: 20px;
+
+  box-shadow: 0px 4px 70px rgba(91, 93, 99, 0.06);
+  border-radius: 11px;
+}
+
+.team-member_photo {
+  margin-right: 6px;
+}
+
+.team-member__info {
+  padding-top: 4px;
+}
+
+.team-member__name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 217% */
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.team-member__position {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 26px;
+  /* identical to box height, or 236% */
+  display: flex;
+  align-items: center;
+
+  color: #9ca3af;
+}
+
+/* team  */
+
+/* team-media */
+
+@media screen and (max-width: 1050px) {
+  .team-members {
+    flex-direction: column;
+  }
+
+  .team-member {
+    margin-bottom: 30px;
+  }
+}
+
+/* team-media */
